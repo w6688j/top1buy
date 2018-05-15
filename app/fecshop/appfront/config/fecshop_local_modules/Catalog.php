@@ -12,9 +12,10 @@ return [
         /**
          * Yii2 controllerMap 重写机制。
          */
-        //'controllerMap' => [
-        //    'category' => 'appfront\local\local_modules\Catalog\controllers\CategoryController',          
-        //],
+        /*'controllerMap' => [
+            'product' => 'appfront\local\local_modules\Catalog\controllers\productController',
+        ],*/
+        'class' => '\appfront\local\local_modules\Catalog\Module',
         'params'=> [
             //##############################
             //# 		category部分设置	 ##
@@ -95,7 +96,7 @@ return [
             //##############################
             //#     Review部分设置		 ##
             //##############################
-            'review' => [ 
+            'review' => [
                 'add_captcha'                    => true,  // 增加review页面是否开启验证码验证。
                 'productPageReviewCount'         => 10,    // 在产品页面显示的review的个数。
                 'reviewPageReviewCount'          => 20,    // 在review列表页面，显示的review的个数
